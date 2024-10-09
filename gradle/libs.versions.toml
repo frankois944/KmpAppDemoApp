@@ -1,0 +1,128 @@
+[versions]
+kotlin = "2.0.0"
+ksp = "2.0.0-1.0.22" # https://github.com/google/ksp/releases
+shake = "16.2.5"
+sqlDelight = "2.0.2" # https://github.com/cashapp/sqldelight/releases
+kermit = "2.0.4" # https://github.com/touchlab/Kermit/releases
+coroutines = "1.8.1"
+ktor = "2.3.12" # https://github.com/ktorio/ktor/releases
+dateTime = "0.6.0" # https://github.com/Kotlin/kotlinx-datetime/releases
+apollo = "3.8.4" # https://github.com/apollographql/apollo-kotlin/releases
+crashkios = "0.8.6" # https://github.com/touchlab/CrashKiOS/releases
+#Android
+targetSdk = "34"
+minSdk = "24"
+androidComposeBom = "2024.06.00" # https://developer.android.com/jetpack/compose/bom/bom-mapping?hl=en
+#androidLifecycle = ""
+# if androidNavigationCompose version > 2.7.0 : https://issuetracker.google.com/issues/297258205
+# there is an extra animation when changing tabs, waiting for a fix
+androidNavigationCompose = "2.8.0-beta05" # https://developer.android.com/jetpack/androidx/releases/navigation?hl=en
+androidSplashscreen = "1.1.0-rc01" # https://developer.android.com/jetpack/androidx/releases/core#core_splashscreen_version_10_2?hl=en
+constraintlayout = "1.0.1" # https://developer.android.com/jetpack/androidx/releases/constraintlayout?hl=en
+desugar = "2.0.4" # https://github.com/google/desugar_jdk_libs/blob/master/CHANGELOG.md
+#Firebase
+androidFirebase = "33.1.2" # https://firebase.google.com/support/release-notes/android?hl=en
+iosFirebase = "10.28.0" # https://github.com/firebase/firebase-ios-sdk/releases
+#Gradle
+gradleplugin = "8.2.2" # https://developer.android.com/build/releases/gradle-plugin?hl=en
+googleplay = "4.4.2" # https://developers.google.com/android/guides/google-services-plugin?hl=en
+gradleForCrashlytics = "3.0.2" # https://firebase.google.com/docs/crashlytics/get-started?platform=android#add-plugin?hl=en
+#koin
+koin = "3.6.0-Beta4" # https://github.com/InsertKoinIO/koin/tags
+koinAnnotation = "1.3.1" # https://github.com/InsertKoinIO/koin-annotations/tags
+#lottie
+lottieAndroid = "6.4.0" # https://github.com/airbnb/lottie-android/releases
+androidChart = "3.1.0.22" # https://github.com/AppDevNext/AndroidChart/releases
+#coil image with cache
+coil = "2.6.0" # https://github.com/coil-kt/coil/releases
+#MatomoTracker
+matomoIOSVersion = "7.6.0" # https://github.com/matomo-org/matomo-sdk-ios/releases
+matomoAndroidVersion = "4.3" # https://github.com/matomo-org/matomo-sdk-android/releases
+#download task
+downloadTaskversion = "5.6.0" # https://github.com/michel-kraemer/gradle-download-task/releases
+#collection
+collection = "1.4.1"
+
+[libraries]
+# android
+android-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "androidComposeBom" }
+android-compose-navigation = { module = "androidx.navigation:navigation-compose", version.ref = "androidNavigationCompose" }
+android-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "androidSplashscreen" }
+android-compose-ui = { module = "androidx.compose.ui:ui" }
+android-compose-foundation = { module = "androidx.compose.foundation:foundation" }
+android-compose-material = { module = "androidx.compose.material:material" }
+android-compose-activity = { module = "androidx.activity:activity-compose" }
+android-compose-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-compose" }
+android-compose-animation = { module = "androidx.compose.animation:animation" }
+android-compose-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+android-compose-preview-tooling = { module = "androidx.compose.ui:ui-tooling" }
+android-constraint = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintlayout" }
+android-firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "androidFirebase" }
+android-firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
+android-firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+android-ktor-client = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
+android-sqldelight-driver = { module = "app.cash.sqldelight:android-driver", version.ref = "sqlDelight" }
+android-lottie = { module = "com.airbnb.android:lottie-compose", version.ref = "lottieAndroid" }
+android-chart = { module = "com.github.AppDevNext:AndroidChart", version.ref = "androidChart" }
+android-desugar = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar" }
+android-coil = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+android-lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-compose" }
+android-matomo = { module = "com.github.matomo-org:matomo-sdk-android", version.ref = "matomoAndroidVersion" }
+android-koin-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
+#android-lifecycle-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose" }
+#android-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel", version.ref = "androidLifecycle" }
+# kmm
+kmm-kermit = { module = "co.touchlab:kermit", version.ref = "kermit" }
+kmm-kermit-crashlytics = { module = "co.touchlab:kermit-crashlytics", version.ref = "kermit" }
+kmm-crashkios = { module = "co.touchlab.crashkios:crashlytics", version.ref = "crashkios" }
+kmm-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kmm-ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+kmm-ktor-content = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+kmm-ktor-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+kmm-ktor-typesafe = { module = "io.ktor:ktor-client-resources", version.ref = "ktor" }
+kmm-ktor-encoding = { module = "io.ktor:ktor-client-encoding", version.ref = "ktor" }
+kmm-sqldelight-runtime = { module = "app.cash.sqldelight:runtime", version.ref = "sqlDelight" }
+kmm-sqldelight-coroutines = { module = "app.cash.sqldelight:coroutines-extensions", version.ref = "sqlDelight" }
+kmm-sqldelight-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "dateTime" }
+kmm-apollo-runtime = { module = "com.apollographql.apollo3:apollo-runtime", version.ref = "apollo" }
+kmm-apollo-cache = { module = "com.apollographql.apollo3:apollo-normalized-cache-sqlite", version.ref = "apollo" }
+kmm-koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+kmm-koin-annotations = { module = "io.insert-koin:koin-annotations", version.ref = "koinAnnotation" }
+kmm-koin-ksp = { module = "io.insert-koin:koin-ksp-compiler", version.ref = "koinAnnotation" }
+kmm-koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin" }
+#ios
+ios-kermit-simple = { module = "co.touchlab:kermit-simple", version.ref = "kermit" }
+ios-ktor-client = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
+ios-sqldelight-driver = { module = "app.cash.sqldelight:native-driver", version.ref = "sqlDelight" }
+# test
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+shake = { module = "com.shakebugs:shake", version.ref = "shake" }
+#collection
+kmm-collection = { module = "androidx.collection:collection", version.ref = "collection" }
+[bundles]
+compose = [ "android-lifecycle", "android-lottie", "android-compose-ui", "android-compose-foundation", "android-compose-material", "android-compose-activity", "android-compose-viewmodel", "android-compose-animation", "android-compose-preview", "android-constraint"]
+compose-debug = ["android-compose-preview-tooling"]
+android-firebase = ["android-firebase-crashlytics", "android-firebase-analytics" ]
+kmm-kermit = ["kmm-kermit", "kmm-kermit-crashlytics"]
+kmm-ktor = ["kmm-ktor-core", "kmm-ktor-content", "kmm-ktor-json", "kmm-ktor-typesafe", "kmm-ktor-encoding"]
+kmm-sqldelight = ["kmm-sqldelight-runtime", "kmm-sqldelight-coroutines", "kmm-sqldelight-datetime"]
+kmm-apollo = ["kmm-apollo-runtime", "kmm-apollo-cache"]
+kmm-koin = ["kmm-koin-core", "kmm-koin-annotations"]
+android-koin = ["android-koin-compose"]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "gradleplugin" }
+android-library = { id = "com.android.library", version.ref = "gradleplugin" }
+sqldelight-library = { id = "app.cash.sqldelight", version.ref = "sqlDelight" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+ksp-plugin = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+googleplay-plugin = { id = "com.google.gms.google-services", version.ref = "googleplay"  }
+crashlytics-plugin = { id = "com.google.firebase.crashlytics", version.ref = "gradleForCrashlytics"  }
+kotlin-cocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
+kotlin-apollo = {id = "com.apollographql.apollo3", version.ref = "apollo" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+crashkios = { id = "co.touchlab.crashkios.crashlyticslink", version.ref = "crashkios" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+android-download = { id = "de.undercouch.download", version.ref = "downloadTaskversion" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

@@ -1,0 +1,47 @@
+CREATE TABLE IF NOT EXISTS Proposition (
+    id TEXT NOT NULL,
+    content TEXT NOT NULL,
+    isCorrect INTEGER NOT NULL,
+    questionId TEXT NOT NULL,
+    lang TEXT NOT NULL,
+    PRIMARY KEY (id, lang)
+);
+
+insert:
+INSERT OR REPLACE INTO Proposition(id, content, isCorrect, questionId, lang)
+VALUES(?, ?, ?, ?, ?);
+
+removeAll:
+DELETE FROM Proposition;
+
+removeAllForLang:
+DELETE FROM Proposition
+WHERE lang = ?;
+
+selectForQuestionId:
+SELECT Proposition.*
+FROM Proposition
+WHERE questionId = ? AND lang = ?;
+
+selectForQuestionIdAndRandom:
+SELECT Proposition.*
+FROM Proposition
+WHERE questionId = ? AND lang = ?
+ORDER BY RANDOM();
+
+
+select:
+SELECT Proposition.*
+FROM Proposition
+WHERE id = ? AND lang = ?;
+
+selectLastInsertedRowId:
+SELECT last_insert_rowid();
+
+selectChanges:
+SELECT changes();
+
+count:
+SELECT COUNT(*)
+FROM Proposition;
+

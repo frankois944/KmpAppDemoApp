@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1430"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "DOWNLOAD WORDING"
+               scriptText = "inputFr=&quot;https://localise.biz/api/export/locale/fr-FR.strings?key=RBA2TaeBtFxlFCmVefau01mNb2bPS7eU&quot;&#10;outputFr=&quot;$PROJECT_DIR/iosApp/Ressources/fr.lproj/Localizable.strings&quot;&#10;inputEn=&quot;https://localise.biz/api/export/locale/en.strings?key=RBA2TaeBtFxlFCmVefau01mNb2bPS7eU&quot;&#10;outputEn=&quot;$PROJECT_DIR/iosApp/Ressources/en.lproj/Localizable.strings&quot;&#10;etagFileFr=&quot;$SYMROOT/wording_etag_fr.txt&quot;&#10;etagFileEn=&quot;$SYMROOT/wording_etag_en.txt&quot;&#10;etagFR=&quot;&quot;&#10;etagEN=&quot;&quot;&#10;&#10;if [ -f &quot;$etagFileFr&quot; ]&#10;then&#10;etagFR=$(cat $etagFileFr)&#10;echo &quot;Current etag FR = $etagFR&quot;&#10;fi&#10;&#10;if [ -f &quot;$etagFileEn&quot; ]&#10;then&#10;etagEN=$(cat $etagFileEn)&#10;echo &quot;Current etag EN = $etagEN&quot;&#10;fi&#10;&#10;if [ -f &quot;$outputFr&quot; ]&#10;then&#10;    date=$(date -u -R -r $outputFr)&#10;    correctedDate=$(echo $date | sed &quot;s/+0000/GMT/&quot;)&#10;    etagFR=$(curl -v -f -o &quot;$outputFr&quot; &quot;$inputFr&quot; -w &apos;%header{etag}&apos; --header &quot;If-None-Match: $etagFR&quot;) || true&#10;else&#10;    etagFR=$(curl -f -o &quot;$outputFr&quot; &quot;$inputFr&quot; -w &apos;%header{etag}&apos;)&#10;fi&#10;&#10;correctedEtag=$(echo $etagFR | tr -d &apos;&quot;&apos;)&#10;echo $etagFR &gt; $etagFileFr&#10;echo &quot;Found etag FR = $etagFR&quot;&#10;&#10;if [ -f &quot;$outputEn&quot; ]&#10;then&#10;    date=$(date -u -R -r $outputEn)&#10;    correctedDate=$(echo $date | sed &quot;s/+0000/GMT/&quot;)&#10;    etagEN=$(curl -v -f -o &quot;$outputEn&quot; &quot;$inputEn&quot; -w &apos;%header{etag}&apos; --header &quot;If-None-Match: $etagEN&quot;) || true&#10;else&#10;    etagEN=$(curl -f -o &quot;$outputEn&quot;  &quot;$inputEn&quot; -w &apos;%header{etag}&apos;)&#10;fi&#10;&#10;correctedEtag=$(echo $etagEN | tr -d &apos;&quot;&apos;)&#10;echo $etagEN &gt; $etagFileEn&#10;echo &quot;Found etag EN = $etagEN&quot;&#10;"
+               shellToInvoke = "/bin/zsh">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "7555FF7A242A565900829871"
+                     BuildableName = "CACDGAME.app"
+                     BlueprintName = "CACDGAME"
+                     ReferencedContainer = "container:iosApp.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7555FF7A242A565900829871"
+               BuildableName = "CACDGAME.app"
+               BlueprintName = "CACDGAME"
+               ReferencedContainer = "container:iosApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldAutocreateTestPlan = "YES">
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7555FF7A242A565900829871"
+            BuildableName = "CACDGAME.app"
+            BlueprintName = "CACDGAME"
+            ReferencedContainer = "container:iosApp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7555FF7A242A565900829871"
+            BuildableName = "CACDGAME.app"
+            BlueprintName = "CACDGAME"
+            ReferencedContainer = "container:iosApp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

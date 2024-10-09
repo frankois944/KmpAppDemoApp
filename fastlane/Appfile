@@ -1,0 +1,5 @@
+#json_key_file("cacdgame-firebase-adminsdk.json") # Path to the json secret file - Follow https://docs.fastlane.tools/actions/supply/#setup to get one
+#android
+package_name("com.cacd2.cacdgame.android")
+#ios
+app_identifier("com.cacd2.cacdgame.ios")

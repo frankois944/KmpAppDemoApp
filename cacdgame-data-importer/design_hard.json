@@ -1,0 +1,340 @@
+{
+  "questions": [
+    {
+      "question": {
+        "fr": "Qu'est-ce qu'une grille de mise en page en UI/UX design ?",
+        "en": "What is a layout grid in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "Une structure pour organiser le contenu",
+          "Un logiciel de conception graphique",
+          "Un processus d'itération du design",
+          "Une méthode pour collecter des données"
+        ],
+        "en": [
+          "A structure for organizing content",
+          "Graphic design software",
+          "A design iteration process",
+          "A method for collecting data"
+        ]
+      },
+      "correct_answer": {
+        "fr": "Une structure pour organiser le contenu",
+        "en": "A structure for organizing content"
+      },
+      "explanation": {
+        "fr": "Une grille de mise en page est une structure utilisée en UI/UX design pour organiser le contenu d'une interface utilisateur de manière cohérente et esthétiquement plaisante. Elle permet d'aligner et de répartir les éléments visuels de manière équilibrée, ce qui facilite la compréhension et l'utilisation de l'interface par les utilisateurs.",
+        "en": "A layout grid is a structure used in UI/UX design to organize the content of a user interface in a consistent and aesthetically pleasing way. It helps align and distribute visual elements in a balanced manner, making the interface more understandable and usable for users."
+      }
+    },
+    {
+      "question": {
+        "fr": "[DOUBLON]Qu'est-ce que l'accessibilité en UI/UX design ?",
+        "en": "[DOUBLON]What is accessibility in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "La création d'interfaces visuellement attrayantes",
+          "L'adaptation du design aux différents appareils",
+          "La conception pour les personnes handicapées",
+          "L'optimisation des performances de l'interface"
+        ],
+        "en": [
+          "Creating visually appealing interfaces",
+          "Adapting the design to different devices",
+          "Designing for people with disabilities",
+          "Optimizing interface performance"
+        ]
+      },
+      "correct_answer": {
+        "fr": "La conception pour les personnes handicapées",
+        "en": "Designing for people with disabilities"
+      },
+      "explanation": {
+        "fr": "L'accessibilité en UI/UX design consiste à concevoir des interfaces qui peuvent être utilisées facilement par tous les utilisateurs, y compris ceux qui ont des limitations physiques ou cognitives. Cela implique d'adapter le design pour permettre une navigation et une interaction inclusives, en utilisant des techniques telles que des contrastes élevés, des polices lisibles et une navigation claire pour rendre l'interface accessible à tous.",
+        "en": "Accessibility in UI/UX design involves designing interfaces that can be easily used by all users, including those with physical or cognitive limitations. This involves adapting the design to enable inclusive navigation and interaction, using techniques such as high contrasts, readable fonts, and clear navigation to make the interface accessible to all."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce que la hiérarchie visuelle en UI/UX design ?",
+        "en": "What is visual hierarchy in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "La façon dont les couleurs sont utilisées",
+          "La structuration du contenu",
+          "La disposition des éléments visuels",
+          "Le choix des polices de caractères"
+        ],
+        "en": [
+          "How colors are used",
+          "Structuring content",
+          "Layout of visual elements",
+          "Choice of fonts"
+        ]
+      },
+      "correct_answer": {
+        "fr": "La structuration du contenu",
+        "en": "Structuring content"
+      },
+      "explanation": {
+        "fr": "La hiérarchie visuelle en UI/UX design se réfère à la façon dont le contenu est organisé et présenté pour guider l'attention de l'utilisateur. Elle implique de donner plus d'importance aux éléments clés en utilisant des techniques telles que la taille, la couleur, le contraste et l'espacement. Une hiérarchie visuelle efficace aide les utilisateurs à naviguer et à comprendre l'information de manière plus facile et intuitive.",
+        "en": "Visual hierarchy in UI/UX design refers to how content is organized and presented to guide the user's attention. It involves giving more importance to key elements using techniques such as size, color, contrast, and spacing. Effective visual hierarchy helps users navigate and understand information more easily and intuitively."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce que le prototypage en UI/UX design ?",
+        "en": "What is prototyping in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "La création de maquettes graphiques",
+          "Le processus de test utilisateur",
+          "La phase de recherche initiale",
+          "La construction du produit final"
+        ],
+        "en": [
+          "Creating graphic mockups",
+          "User testing process",
+          "Initial research phase",
+          "Building the final product"
+        ]
+      },
+      "correct_answer": {
+        "fr": "La création de maquettes graphiques",
+        "en": "Creating graphic mockups"
+      },
+      "explanation": {
+        "fr": "Le prototypage en UI/UX design consiste à créer des maquettes graphiques interactives qui représentent le fonctionnement et l'apparence d'une interface utilisateur. Ces maquettes permettent de tester les idées, de recueillir les commentaires des utilisateurs et de valider les concepts avant de passer à la phase de développement. Le prototypage aide à identifier les problèmes potentiels et à améliorer l'expérience utilisateur avant la mise en production du produit final.",
+        "en": "Prototyping in UI/UX design involves creating interactive graphic mockups that represent the functionality and appearance of a user interface. These prototypes allow for testing ideas, gathering user feedback, and validating concepts before moving into the development phase. Prototyping helps identify potential issues and improve the user experience prior to the production of the final product."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce que la psychologie des couleurs en UI/UX design ?",
+        "en": "What is color psychology in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "L'étude des préférences des utilisateurs",
+          "La signification des couleurs",
+          "L'utilisation des couleurs dans le design",
+          "La perception visuelle des couleurs"
+        ],
+        "en": [
+          "Studying user preferences",
+          "Meaning of colors",
+          "Using colors in design",
+          "Visual perception of colors"
+        ]
+      },
+      "correct_answer": {
+        "fr": "La signification des couleurs",
+        "en": "Meaning of colors"
+      },
+      "explanation": {
+        "fr": "La psychologie des couleurs en UI/UX design étudie comment les couleurs affectent les émotions, les perceptions et les comportements des utilisateurs. Chaque couleur a une signification et une connotation différentes, et leur utilisation dans le design peut influencer la façon dont les utilisateurs interagissent avec une interface. Comprendre la psychologie des couleurs aide les concepteurs à choisir les bonnes combinaisons de couleurs pour susciter les réactions souhaitées chez les utilisateurs.",
+        "en": "Color psychology in UI/UX design studies how colors affect users' emotions, perceptions, and behaviors. Each color has different meanings and connotations, and their use in design can influence how users interact with an interface. Understanding color psychology helps designers choose the right color combinations to evoke desired reactions from users."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce que la navigation intuitive en UI/UX design ?",
+        "en": "What is intuitive navigation in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "Une navigation basée sur l'intuition",
+          "Une navigation visuellement attrayante",
+          "Une navigation en un seul clic",
+          "Une navigation guidée par des animations"
+        ],
+        "en": [
+          "Navigation based on intuition",
+          "Visually appealing navigation",
+          "One-click navigation",
+          "Navigation guided by animations"
+        ]
+      },
+      "correct_answer": {
+        "fr": "Une navigation basée sur l'intuition",
+        "en": "Navigation based on intuition"
+      },
+      "explanation": {
+        "fr": "La navigation intuitive en UI/UX design se réfère à la facilité avec laquelle les utilisateurs peuvent naviguer à travers une interface sans confusion ni effort excessif. Elle repose sur l'utilisation de conventions de navigation familières, d'une organisation logique des éléments et d'une représentation visuelle claire des interactions possibles. Une navigation intuitive réduit les frictions et aide les utilisateurs à trouver rapidement et facilement les informations ou les fonctionnalités dont ils ont besoin.",
+        "en": "Intuitive navigation in UI/UX design refers to how easily users can navigate through an interface without confusion or excessive effort. It relies on the use of familiar navigation conventions, logical organization of elements, and clear visual representation of possible interactions. Intuitive navigation reduces friction and helps users quickly and easily find the information or features they need."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce que la micro-interaction en UI/UX design ?",
+        "en": "What is micro-interaction in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "Une interaction de petite taille",
+          "Une interaction visuelle complexe",
+          "Une interaction avec un menu",
+          "Une interaction avec des formes"
+        ],
+        "en": [
+          "A small-scale interaction",
+          "A complex visual interaction",
+          "An interaction with a menu",
+          "An interaction with shapes"
+        ]
+      },
+      "correct_answer": {
+        "fr": "Une interaction de petite taille",
+        "en": "A small-scale interaction"
+      },
+      "explanation": {
+        "fr": "Une micro-interaction en UI/UX design est une interaction de petite échelle qui se produit lorsqu'un utilisateur effectue une action spécifique sur une interface. Elle peut prendre la forme d'une animation, d'une réponse visuelle ou sonore, ou d'un changement de l'état d'un élément interactif. Les micro-interactions ajoutent de la dynamique et de la réactivité à une interface, améliorant ainsi l'expérience utilisateur en rendant les interactions plus engageantes et gratifiantes.",
+        "en": "A micro-interaction in UI/UX design is a small-scale interaction that occurs when a user performs a specific action on an interface. It can take the form of an animation, a visual or auditory response, or a change in the state of an interactive element. Micro-interactions add dynamism and responsiveness to an interface, thus enhancing the user experience by making interactions more engaging and rewarding."
+      }
+    },
+    {
+      "question": {
+        "fr": "[DOUBLON]Qu'est-ce que la typographie en UI/UX design ?",
+        "en": "[DOUBLON]What is typography in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "L'art de choisir les polices de caractères",
+          "L'organisation visuelle du contenu",
+          "La mise en page d'une interface",
+          "L'utilisation des couleurs dans le texte"
+        ],
+        "en": [
+          "The art of choosing fonts",
+          "Visual organization of content",
+          "Layout of an interface",
+          "Using colors in text"
+        ]
+      },
+      "correct_answer": {
+        "fr": "L'art de choisir les polices de caractères",
+        "en": "The art of choosing fonts"
+      },
+      "explanation": {
+        "fr": "La typographie en UI/UX design se réfère à l'utilisation des polices de caractères pour améliorer la lisibilité, l'esthétique et la communication d'une interface. Le choix des polices, leur taille, leur espacement et leur couleur sont des éléments clés de la typographie. Une typographie bien pensée permet de transmettre efficacement l'information, de créer une hiérarchie visuelle et de renforcer l'identité visuelle d'une interface.",
+        "en": "Typography in UI/UX design refers to the use of fonts to enhance the readability, aesthetics, and communication of an interface. The choice of fonts, their size, spacing, and color are key elements of typography. Well-thought-out typography helps effectively convey information, create visual hierarchy, and reinforce the visual identity of an interface."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce que la conception centrée sur l'utilisateur en UI/UX design ?",
+        "en": "What is user-centered design in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "Une conception basée sur les besoins des utilisateurs",
+          "Une conception visuellement attrayante",
+          "Une conception rapide et économique",
+          "Une conception basée sur l'inspiration artistique"
+        ],
+        "en": [
+          "A design based on user needs",
+          "A visually appealing design",
+          "A fast and cost-effective design",
+          "A design based on artistic inspiration"
+        ]
+      },
+      "correct_answer": {
+        "fr": "Une conception basée sur les besoins des utilisateurs",
+        "en": "A design based on user needs"
+      },
+      "explanation": {
+        "fr": "La conception centrée sur l'utilisateur en UI/UX design est une approche qui met l'accent sur la compréhension et la prise en compte des besoins, des attentes et des capacités des utilisateurs tout au long du processus de conception. Elle implique la réalisation de recherches utilisateur, la création de personas, la réalisation de tests utilisateur et l'itération constante pour s'assurer que l'interface répond aux besoins réels des utilisateurs. La conception centrée sur l'utilisateur vise à créer des produits conviviaux, utiles et adaptés aux utilisateurs finaux.",
+        "en": "User-centered design in UI/UX design is an approach that emphasizes understanding and considering the needs, expectations, and capabilities of users throughout the design process. It involves conducting user research, creating personas, conducting user testing, and constant iteration to ensure the interface meets the actual needs of users. User-centered design aims to create user-friendly, useful, and user-centric products."
+      }
+    },
+    {
+      "question": {
+        "fr": "[DOUBLON2]Qu'est-ce que l'accessibilité en UI/UX design ?",
+        "en": "[DOUBLON2]What is accessibility in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "La beauté visuelle d'une interface",
+          "L'optimisation des performances",
+          "L'adaptabilité aux différents appareils",
+          "La facilité d'utilisation pour tous"
+        ],
+        "en": [
+          "The visual beauty of an interface",
+          "Optimizing performance",
+          "Adaptability to different devices",
+          "Ease of use for all"
+        ]
+      },
+      "correct_answer": {
+        "fr": "La facilité d'utilisation pour tous",
+        "en": "Ease of use for all"
+      },
+      "explanation": {
+        "fr": "L'accessibilité en UI/UX design consiste à concevoir des interfaces qui sont utilisables par tous, y compris les personnes ayant des capacités différentes. Cela inclut la prise en compte des besoins des utilisateurs ayant des limitations visuelles, auditives, motrices ou cognitives. Les interfaces accessibles utilisent des techniques telles que la navigation claire, les contrastes élevés, les explanations alternatives pour les images, et la prise en charge des technologies d'assistance. L'accessibilité améliore l'expérience utilisateur en permettant à chacun d'interagir avec une interface de manière efficace et satisfaisante.",
+        "en": "Accessibility in UI/UX design involves designing interfaces that are usable by everyone, including individuals with different abilities. This includes considering the needs of users with visual, hearing, motor, or cognitive limitations. Accessible interfaces use techniques such as clear navigation, high contrasts, alternative explanations for images, and support for assistive technologies. Accessibility enhances the user experience by enabling everyone to interact with an interface effectively and satisfactorily."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce que la conception adaptative en UI/UX design ?",
+        "en": "What is adaptive design in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "Une conception qui s'adapte à l'environnement",
+          "Une conception avec des animations",
+          "Une conception basée sur les couleurs",
+          "Une conception en responsive design"
+        ],
+        "en": [
+          "A design that adapts to the environment",
+          "A design with animations",
+          "A design based on colors",
+          "A design in responsive design"
+        ]
+      },
+      "correct_answer": {
+        "fr": "Une conception qui s'adapte à l'environnement",
+        "en": "A design that adapts to the environment"
+      },
+      "explanation": {
+        "fr": "La conception adaptative en UI/UX design est une approche qui vise à créer des interfaces qui s'adaptent de manière dynamique à différents environnements et appareils. Elle implique la conception de mises en page flexibles, d'éléments modulaires et de techniques de mise en page réactive. Une conception adaptative permet à l'interface de s'ajuster automatiquement aux dimensions d'écran, aux capacités de l'appareil et aux préférences de l'utilisateur, offrant ainsi une expérience utilisateur cohérente et optimale sur une variété de plateformes.",
+        "en": "Adaptive design in UI/UX design is an approach that aims to create interfaces that dynamically adapt to different environments and devices. It involves designing flexible layouts, modular elements, and responsive layout techniques. An adaptive design allows the interface to automatically adjust to screen dimensions, device capabilities, and user preferences, providing a consistent and optimal user experience across a variety of platforms."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce que l'ergonomie en UI/UX design ?",
+        "en": "What is ergonomics in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "L'optimisation des performances",
+          "L'adaptabilité aux différents appareils",
+          "L'organisation visuelle du contenu",
+          "L'efficacité et le confort d'utilisation"
+        ],
+        "en": [
+          "Optimizing performance",
+          "Adaptability to different devices",
+          "Visual organization of content",
+          "Efficiency and user comfort"
+        ]
+      },
+      "correct_answer": {
+        "fr": "L'efficacité et le confort d'utilisation",
+        "en": "Efficiency and user comfort"
+      },
+      "explanation": {
+        "fr": "L'ergonomie en UI/UX design se réfère à la conception d'interfaces qui sont efficaces, pratiques et agréables à utiliser. Elle implique la création de flux de travail intuitifs, la simplification des tâches, la réduction de la charge cognitive et physique, et l'optimisation de l'efficacité et du confort d'utilisation. L'ergonomie vise à rendre l'interface conviviale, accessible et adaptée aux besoins des utilisateurs, favorisant ainsi une expérience utilisateur positive.",
+        "en": "Ergonomics in UI/UX design refers to the design of interfaces that are efficient, practical, and enjoyable to use. It involves creating intuitive workflows, simplifying tasks, reducing cognitive and physical load, and optimizing efficiency and user comfort. Ergonomics aims to make the interface user-friendly, accessible, and tailored to the needs of users, thus promoting a positive user experience."
+      }
+    }
+  ]
+}

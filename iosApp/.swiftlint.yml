@@ -1,0 +1,8 @@
+excluded: # case-sensitive paths to ignore during linting. Takes precedence over `included`
+ - ./Pods/
+ - iosApp.xcodeproj
+ - iosApp.xcworkspace
+ - PrivacyInfo.xcprivacy
+ - Podfile
+ - Podfile.lock
+ - ./iosApp/Ressources/ 

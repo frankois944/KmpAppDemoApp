@@ -1,0 +1,83 @@
+CREATE TABLE IF NOT EXISTS Question(
+    id TEXT NOT NULL,
+    categoryId TEXT NOT NULL,
+    content TEXT NOT NULL,
+    correctPorpositionId TEXT NOT NULL,
+    detail TEXT NOT NULL,
+    lang TEXT NOT NULL,
+    difficulty TEXT NOT NULL,
+    illustration TEXT,
+    PRIMARY KEY (id, lang)
+);
+
+insert:
+INSERT OR REPLACE INTO Question(id, categoryId, content, correctPorpositionId, detail, lang, difficulty, illustration)
+VALUES(?, ?, ?, ?, ?, ?, ?, ?);
+
+removeAll:
+DELETE FROM Question;
+
+removeAllForLang:
+DELETE FROM Question
+WHERE lang = ?;
+
+selectAll:
+SELECT Question.*
+FROM Question WHERE lang = ?;
+
+selectRandomWithLimit:
+SELECT Question.*
+FROM Question
+WHERE difficulty = ? AND lang = ?
+ORDER BY RANDOM() LIMIT :size;
+
+selectLastInsertedRowId:
+SELECT last_insert_rowid();
+
+select:
+SELECT Question.*
+FROM Question
+WHERE id = ? AND lang = ?;
+
+selectInside:
+SELECT Question.*
+FROM Question
+WHERE id IN ? AND lang = ?;
+
+byCategory:
+SELECT Question.*
+FROM Question
+WHERE categoryId = ? AND lang = ?;
+
+byCategoryRandomQuestionWithLimit:
+SELECT Question.*
+FROM Question
+WHERE categoryId = ? AND difficulty = ? AND lang = ?
+ORDER BY RANDOM() LIMIT :size;
+
+byCategoriesIdAndCriteria:
+SELECT Question.*
+FROM Question
+WHERE categoryId IN :categoryId AND content LIKE ('%' || :content || '%') AND lang = :lang;
+
+byCategoriesId:
+SELECT Question.*
+FROM Question
+WHERE categoryId IN ? AND lang = ?;
+
+selectChanges:
+SELECT changes();
+
+count:
+SELECT COUNT(*)
+FROM Question;
+
+countForLang:
+SELECT COUNT(*)
+FROM Question
+WHERE lang = ?;
+
+countByCategory:
+SELECT COUNT(*)
+FROM Question
+WHERE categoryId = ? AND difficulty = ? AND lang = ?;

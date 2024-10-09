@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: Switch to ios updateVersionIfNeeded lane" time="0.000375">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: prompt" time="1.026043">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: prompt" time="45.14295">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: Switch to ios build_shared_cocoapods_if_needed lane" time="0.000363">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: build_app" time="179.408056">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: upload_to_testflight" time="518.970011">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="6: clean_build_artifacts" time="0.00712">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

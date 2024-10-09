@@ -1,0 +1,39 @@
+CREATE TABLE IF NOT EXISTS ChoiceHistoryLine (
+   id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+   choiceHistoryId INTEGER NOT NULL,
+   choiceId TEXT NOT NULL,
+   selectedChoiceId TEXT NOT NULL,
+   userHasOk INTEGER NOT NULL,
+   responseTime INTEGER NOT NULL
+);
+
+insert:
+INSERT INTO ChoiceHistoryLine(choiceHistoryId, choiceId, selectedChoiceId, userHasOk, responseTime)
+VALUES(?, ?,?, ?, ?);
+
+byHistoryId:
+SELECT ChoiceHistoryLine.*
+FROM ChoiceHistoryLine
+WHERE choiceHistoryId = ?;
+
+selectAll:
+SELECT ChoiceHistoryLine.*
+FROM ChoiceHistoryLine;
+
+selectLastInsertedRowId:
+SELECT last_insert_rowid();
+
+removeAll:
+DELETE FROM ChoiceHistoryLine;
+
+selectById:
+SELECT ChoiceHistoryLine.*
+FROM ChoiceHistoryLine
+WHERE id = ?;
+
+selectChanges:
+SELECT changes();
+
+count:
+SELECT COUNT(*)
+FROM ChoiceHistoryLine;

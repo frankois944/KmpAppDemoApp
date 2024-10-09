@@ -1,0 +1,26 @@
+CREATE TABLE IF NOT EXISTS Setting (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    key TEXT NOT NULL,
+    value TEXT DEFAULT NULL
+);
+
+get:
+SELECT Setting.*
+FROM Setting
+WHERE key = ?;
+
+getAll:
+SELECT Setting.* FROM Setting;
+
+insert:
+INSERT INTO Setting(key, value)
+VALUES(?, ?);
+
+update:
+UPDATE Setting
+SET value = ?
+WHERE key = ?;
+
+delete:
+DELETE FROM Setting
+WHERE key = ?;

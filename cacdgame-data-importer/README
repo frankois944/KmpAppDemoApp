@@ -1,0 +1,19 @@
+# Import de données vers datocsm
+
+Ce script node est un importer de questions pour l'application cacdgame.
+
+## Setup 
+
+`npm install`
+
+## usage
+
+`npm run import -- --category Tech --filePath question-design.json`
+
+Choix possible:
+
+* category : design, produit, tech
+
+## Format
+
+Le format json est à prendre en exemple dans le fichier question-design.json

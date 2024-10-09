@@ -1,0 +1,42 @@
+# Your GraphQL query or mutation goes here
+query AllData($lang: SiteLocale) {
+    allCategories(locale: $lang) {
+        id
+        name
+        _allReferencingQuestions(first: 100) {
+            id
+            label
+            difficulty
+            choices {
+                id
+                proposition
+                correct
+            }
+            explanation
+            illustration {
+                url
+            }
+        }
+    }
+}
+
+query AllDataFromDate($lang: SiteLocale, $date: DateTime) {
+    allCategories(locale: $lang) {
+        id
+        name
+        _allReferencingQuestions(first: 100, filter: {_updatedAt: {gt: $date}}) {
+            id
+            label
+            difficulty
+            choices {
+                id
+                proposition
+                correct
+            }
+            explanation
+            illustration {
+                url
+            }
+        }
+    }
+}

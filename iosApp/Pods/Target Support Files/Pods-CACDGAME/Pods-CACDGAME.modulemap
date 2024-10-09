@@ -1,0 +1,6 @@
+framework module Pods_CACDGAME {
+  umbrella header "Pods-CACDGAME-umbrella.h"
+
+  export *
+  module * { export * }
+}

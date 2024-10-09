@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="LaunchTheme" parent="Theme.SplashScreen">
+        <item name="postSplashScreenTheme">@style/NormalTheme</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/branding</item>
+    </style>
+
+    <style name="NormalTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">#FFFFFF</item>
+    </style>
+
+</resources>

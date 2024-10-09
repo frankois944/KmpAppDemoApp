@@ -1,0 +1,284 @@
+{
+  "questions": [
+    {
+      "question": {
+        "fr": "Qu'est-ce que l'UX design ?",
+        "en": "What is UX design?"
+      },
+      "answers": {
+        "fr": [
+          "La conception de l'expérience utilisateur",
+          "La création d'interfaces esthétiques",
+          "La programmation de sites web",
+          "L'analyse de données statistiques"
+        ],
+        "en": [
+          "The design of user experience",
+          "Creating aesthetic interfaces",
+          "Web programming",
+          "Statistical data analysis"
+        ]
+      },
+      "correct_answer": {
+        "fr": "La conception de l'expérience utilisateur",
+        "en": "The design of user experience"
+      },
+      "explanation": {
+        "fr": "L'UX design est la discipline qui consiste à concevoir des produits et des services en mettant l'accent sur l'expérience utilisateur. Il s'agit de créer des interfaces conviviales, intuitives et efficaces pour les utilisateurs finaux.",
+        "en": "UX design is the discipline of designing products and services with a focus on user experience. It involves creating user-friendly, intuitive, and efficient interfaces for end-users."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce que l'UI design ?",
+        "en": "What is UI design?"
+      },
+      "answers": {
+        "fr": [
+          "La conception de l'expérience utilisateur",
+          "La création d'interfaces esthétiques",
+          "La programmation de sites web",
+          "L'analyse de données statistiques"
+        ],
+        "en": [
+          "The design of user experience",
+          "Creating aesthetic interfaces",
+          "Web programming",
+          "Statistical data analysis"
+        ]
+      },
+      "correct_answer": {
+        "fr": "La création d'interfaces esthétiques",
+        "en": "Creating aesthetic interfaces"
+      },
+      "explanation": {
+        "fr": "L'UI design se concentre sur la création d'interfaces esthétiques, attrayantes et visuellement agréables pour les utilisateurs. Cela implique la sélection de couleurs, de typographies, de mise en page et d'éléments visuels cohérents qui améliorent l'expérience utilisateur.",
+        "en": "UI design focuses on creating aesthetic, visually appealing interfaces for users. This involves selecting colors, typography, layout, and consistent visual elements that enhance the user experience."
+      }
+    },
+    {
+      "question": {
+        "fr": "Que signifie le terme 'wireframe' en UI/UX design ?",
+        "en": "What does the term 'wireframe' mean in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "Un document texte décrivant l'interface",
+          "Un prototype interactif",
+          "Une maquette graphique finale",
+          "Une représentation visuelle simplifiée"
+        ],
+        "en": [
+          "A text document describing the interface",
+          "An interactive prototype",
+          "A final graphic mockup",
+          "A simplified visual representation"
+        ]
+      },
+      "correct_answer": {
+        "fr": "Une représentation visuelle simplifiée",
+        "en": "A simplified visual representation"
+      },
+      "explanation": {
+        "fr": "Un wireframe est une représentation visuelle simplifiée d'une interface utilisateur. Il s'agit d'une esquisse ou d'un schéma qui montre la structure et la disposition des éléments sur une page, sans se concentrer sur les détails graphiques ou les contenus spécifiques.",
+        "en": "A wireframe is a simplified visual representation of a user interface. It is a sketch or diagram that shows the structure and layout of elements on a page, without focusing on specific graphics or content details."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce qu'une étude d'utilisabilité ?",
+        "en": "What is a usability study?"
+      },
+      "answers": {
+        "fr": [
+          "Une analyse de marché",
+          "Une évaluation de la performance du site",
+          "Un test avec des utilisateurs réels",
+          "Un audit des technologies utilisées"
+        ],
+        "en": [
+          "A market analysis",
+          "An evaluation of site performance",
+          "A test with real users",
+          "An audit of technologies used"
+        ]
+      },
+      "correct_answer": {
+        "fr": "Un test avec des utilisateurs réels",
+        "en": "A test with real users"
+      },
+      "explanation": {
+        "fr": "Une étude d'utilisabilité consiste à observer et à évaluer comment les utilisateurs interagissent avec un produit ou un service. Des utilisateurs réels sont invités à accomplir des tâches spécifiques afin de recueillir des données sur leur expérience et d'identifier les problèmes potentiels d'interaction.",
+        "en": "A usability study involves observing and evaluating how users interact with a product or service. Real users are invited to perform specific tasks in order to gather data about their experience and identify potential interaction problems."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce qu'un prototype en UI/UX design ?",
+        "en": "What is a prototype in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "Une représentation visuelle finale",
+          "Un document de spécifications techniques",
+          "Une maquette interactive",
+          "Un rapport d'analyse des besoins"
+        ],
+        "en": [
+          "A final visual representation",
+          "A technical specification document",
+          "An interactive mockup",
+          "A requirements analysis report"
+        ]
+      },
+      "correct_answer": {
+        "fr": "Une maquette interactive",
+        "en": "An interactive mockup"
+      },
+      "explanation": {
+        "fr": "Un prototype en UI/UX design est une maquette interactive du produit ou du service final. Il permet de simuler les interactions et le fonctionnement de l'interface, offrant aux utilisateurs la possibilité de tester et de donner des feedbacks sur l'expérience avant le développement complet.",
+        "en": "A prototype in UI/UX design is an interactive mockup of the final product or service. It simulates the interactions and functionality of the interface, allowing users to test and provide feedback on the experience before full development."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce que la hiérarchie visuelle dans le design UI ?",
+        "en": "What is visual hierarchy in UI design?"
+      },
+      "answers": {
+        "fr": [
+          "L'utilisation de couleurs vives",
+          "La mise en page responsive",
+          "L'organisation des éléments visuels",
+          "L'ajout d'animations interactives"
+        ],
+        "en": [
+          "The use of vibrant colors",
+          "Responsive layout",
+          "The organization of visual elements",
+          "Adding interactive animations"
+        ]
+      },
+      "correct_answer": {
+        "fr": "L'organisation des éléments visuels",
+        "en": "The organization of visual elements"
+      },
+      "explanation": {
+        "fr": "La hiérarchie visuelle dans le design UI se réfère à l'organisation des éléments visuels dans une interface pour guider l'attention de l'utilisateur. Cela implique l'utilisation de la taille, de la couleur, de la typographie et de la disposition pour mettre en évidence les éléments importants et créer une structure visuelle claire.",
+        "en": "Visual hierarchy in UI design refers to the organization of visual elements in an interface to guide the user's attention. This involves using size, color, typography, and layout to highlight important elements and create a clear visual structure."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce que l'accessibilité en UI/UX design ?",
+        "en": "What is accessibility in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "La prise en compte des besoins des utilisateurs handicapés",
+          "L'utilisation de technologies récentes",
+          "La personnalisation de l'interface",
+          "L'optimisation du référencement"
+        ],
+        "en": [
+          "Considering the needs of users with disabilities",
+          "Using recent technologies",
+          "Customizing the interface",
+          "Optimizing search engine ranking"
+        ]
+      },
+      "correct_answer": {
+        "fr": "La prise en compte des besoins des utilisateurs handicapés",
+        "en": "Considering the needs of users with disabilities"
+      },
+      "explanation": {
+        "fr": "L'accessibilité en UI/UX design consiste à concevoir des interfaces qui sont utilisables par un large éventail d'utilisateurs, y compris ceux ayant des capacités différentes. Cela implique d'utiliser des techniques et des principes de conception pour rendre l'interface compréhensible, navigable et utilisable par tous.",
+        "en": "Accessibility in UI/UX design involves designing interfaces that are usable by a wide range of users, including those with different abilities. This involves using techniques and design principles to make the interface understandable, navigable, and usable by all."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce que la typographie en UI/UX design ?",
+        "en": "What is typography in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "L'utilisation de différentes polices de caractères",
+          "L'optimisation de la vitesse de chargement",
+          "La disposition des éléments visuels",
+          "L'utilisation de couleurs complémentaires"
+        ],
+        "en": [
+          "Using different fonts",
+          "Optimizing loading speed",
+          "Arranging visual elements",
+          "Using complementary colors"
+        ]
+      },
+      "correct_answer": {
+        "fr": "L'utilisation de différentes polices de caractères",
+        "en": "Using different fonts"
+      },
+      "explanation": {
+        "fr": "La typographie en UI/UX design fait référence à l'utilisation de différentes polices de caractères pour communiquer des informations et créer une esthétique visuelle. Les choix de police, de taille, de graisse et d'espacement sont importants pour assurer la lisibilité et transmettre l'intention du contenu aux utilisateurs.",
+        "en": "Typography in UI/UX design refers to the use of different fonts to communicate information and create a visual aesthetic. Font choices, size, weight, and spacing are important in ensuring readability and conveying the content's intent to users."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce que l'expérience utilisateur (UX) ?",
+        "en": "What is user experience (UX)?"
+      },
+      "answers": {
+        "fr": [
+          "Le design visuel d'une interface",
+          "L'interaction avec le contenu",
+          "L'optimisation des performances",
+          "L'ensemble des émotions et perceptions"
+        ],
+        "en": [
+          "The visual design of an interface",
+          "Interaction with the content",
+          "Optimizing performance",
+          "The overall emotions and perceptions"
+        ]
+      },
+      "correct_answer": {
+        "fr": "L'ensemble des émotions et perceptions",
+        "en": "The overall emotions and perceptions"
+      },
+      "explanation": {
+        "fr": "L'expérience utilisateur (UX) englobe l'ensemble des émotions, des perceptions et des réponses d'un utilisateur lors de l'interaction avec un produit, un service ou un système. Elle englobe la facilité d'utilisation, la satisfaction, l'efficacité, l'utilité et l'esthétique de l'interface, ainsi que les émotions ressenties pendant l'interaction.",
+        "en": "User experience (UX) encompasses the overall emotions, perceptions, and responses of a user when interacting with a product, service, or system. It includes usability, satisfaction, efficiency, usefulness, and aesthetics of the interface, as well as the emotions felt during the interaction."
+      }
+    },
+    {
+      "question": {
+        "fr": "Qu'est-ce que la navigation en UI/UX design ?",
+        "en": "What is navigation in UI/UX design?"
+      },
+      "answers": {
+        "fr": [
+          "La mise en page et l'organisation des éléments",
+          "L'interaction avec les boutons",
+          "L'utilisation de menus déroulants",
+          "La personnalisation de l'interface"
+        ],
+        "en": [
+          "Layout and organization of elements",
+          "Interaction with buttons",
+          "Using dropdown menus",
+          "Customizing the interface"
+        ]
+      },
+      "correct_answer": {
+        "fr": "La mise en page et l'organisation des éléments",
+        "en": "Layout and organization of elements"
+      },
+      "explanation": {
+        "fr": "La navigation en UI/UX design concerne la façon dont les utilisateurs se déplacent et interagissent avec une interface. Cela inclut la mise en page, la structuration des menus, les liens, les boutons et autres éléments de navigation qui facilitent l'accès aux différentes parties de l'interface et aux fonctionnalités.",
+        "en": "Navigation in UI/UX design is about how users move and interact with an interface. This includes layout, menu structuring, links, buttons, and other navigation elements that facilitate access to different parts of the interface and its functionalities."
+      }
+    }
+  ]
+}

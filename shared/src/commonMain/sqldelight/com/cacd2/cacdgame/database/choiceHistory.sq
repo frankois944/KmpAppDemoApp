@@ -1,0 +1,53 @@
+CREATE TABLE IF NOT EXISTS ChoiceHistory (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    categoryId TEXT NOT NULL,
+    timestamp INTEGER NOT NULL,
+    lang TEXT NOT NULL
+);
+
+insert:
+INSERT INTO ChoiceHistory(categoryId, timestamp, lang)
+VALUES(?, ?, ?);
+
+byGameId:
+SELECT ChoiceHistory.*
+FROM ChoiceHistory
+WHERE categoryId = ?;
+
+removeAll:
+DELETE FROM ChoiceHistory;
+
+selectAll:
+SELECT ChoiceHistory.*
+FROM ChoiceHistory;
+
+selectAllByDesc:
+SELECT ChoiceHistory.*
+FROM ChoiceHistory
+ORDER BY timestamp DESC;
+
+selectWithCategoriesByDesc:
+SELECT ChoiceHistory.*
+FROM ChoiceHistory
+WHERE categoryId IN ?
+ORDER BY timestamp DESC;
+
+selectLastInsertedRowId:
+SELECT last_insert_rowid();
+
+selectById:
+SELECT ChoiceHistory.*
+FROM ChoiceHistory
+WHERE id = ?;
+
+selectChanges:
+SELECT changes();
+
+count:
+SELECT COUNT(*)
+FROM ChoiceHistory;
+
+selectCategoryDone:
+SELECT categoryId
+FROM ChoiceHistory
+GROUP BY categoryId;

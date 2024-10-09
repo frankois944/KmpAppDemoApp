@@ -1,0 +1,146 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "ilbo-yzyi-egcx-wvnf"
+
+require "pathname"
+
+platform :ios do
+  workspace = "iosApp/iosApp.xcworkspace"
+  xcodeproj = "iosApp/iosApp.xcodeproj"
+
+  desc "Runs all the ios tests"
+  lane :test do
+    run_tests(workspace: workspace)
+  end
+
+  desc "Distribute on TestFlight"
+  lane :distribute do
+    updateVersionIfNeeded
+
+    changelog = prompt({
+      text: "Changelog: ",
+      multi_line_end_keyword: "END",
+    })
+
+    #sync_code_signing(type: "appstore")
+
+    build_shared_cocoapods_if_needed
+    build_app(workspace: workspace)
+    upload_to_testflight(
+      changelog: changelog,
+      username: "francois.dabonot@cacd2.fr",
+      distribute_external: true,
+      notify_external_testers: true,
+      groups: "externe",
+    )
+    clean_build_artifacts
+  end
+
+  desc "Manually update the version if needed"
+  private_lane :updateVersionIfNeeded do
+    UI.header "Setting a version for iOS application"
+    needUpdate = prompt(
+      text: "Do you need to change the app version?",
+      boolean: true,
+    )
+    if needUpdate == true
+      newVersion = prompt(
+        text: "Version:",
+      )
+      newVersion = newVersion.to_s.strip
+      unless newVersion.empty?
+        ios_set_version(
+          version: newVersion,
+          xcodeproj: xcodeproj, # optional
+        )
+        UI.success "version has been updated to " + newVersion
+      end
+    end
+  end
+
+  private_lane :build_shared_cocoapods_if_needed do
+    has_cocoadpods = Dir.exist?('../shared/build/cocoapods')
+    if has_cocoadpods == false
+      UI.important "NO cocoapods folder found in shared, let's build it"
+      `cd ../ && ./gradlew podImport`
+      UI.success "Build done!"
+    else
+      UI.success "Cocoapods folder found in shared!"
+    end
+  end
+end
+
+platform :android do
+  desc "Runs all the android tests"
+  lane :test do
+    gradle(task: "test")
+  end
+
+  desc "Distribute on Firebase"
+  lane :distribute do
+    updateVersionNameIfNeeded
+    changelog = prompt({
+      text: "Changelog: ",
+      multi_line_end_keyword: "END",
+    })
+    increment_version_code_internal
+    gradle(
+      task: "clean bundle",
+      build_type: "Release",
+      flags: "-PforTesting=true",
+    )
+    release = firebase_app_distribution(
+      app: "1:713944598133:android:3d818313e4012511145a3c",
+      release_notes: changelog,
+      groups: "CACD2",
+      android_artifact_path: lane_context[SharedValues::GRADLE_AAB_OUTPUT_PATH],
+      android_artifact_type: "AAB",
+    )
+  end
+
+  desc "Deploy a new version to the Google Play"
+  lane :deploy do
+    gradle(task: "clean assembleRelease")
+    upload_to_play_store
+  end
+
+  private_lane :increment_version_code_internal do
+    latest_release = firebase_app_distribution_get_latest_release(
+      app: "1:713944598133:android:3d818313e4012511145a3c",
+    )
+    increment_version_code({ version_code: latest_release[:buildVersion].to_i + 1, app_project_dir: "androidApp" })
+  end
+
+  desc "Manually update the version name if needed"
+  private_lane :updateVersionNameIfNeeded do
+    UI.header "Setting a version name for Android application"
+    needUpdate = prompt(
+      text: "Do you need to change the app version name?",
+      boolean: true,
+    )
+    if needUpdate == true
+      newVersion = prompt(
+        text: "Version name:",
+      )
+      newVersion = newVersion.to_s.strip
+      unless newVersion.empty?
+        increment_version_name(app_project_dir: "androidApp",
+                               version_name: newVersion)
+        UI.success "version name has been updated to " + newVersion
+      end
+    end
+  end
+end
